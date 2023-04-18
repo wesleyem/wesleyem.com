@@ -1,10 +1,12 @@
-# Getting Started with Create React App
+# Professional Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+React app for my personal resume style website, boostrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+Everything listed below is boilerplate from create-react-app.
 
 ## Available Scripts
 
-In the project directory, you can run:
+In the project directory, run:
 
 ### `npm start`
 
