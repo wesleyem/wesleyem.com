@@ -23,6 +23,11 @@ class SocialLinks extends Component {
         iClass: "bx-envelope",
         link: "mailto:wesleyem@pm.me",
       },
+      {
+        aClass: "blog",
+        iClass: "bx-comment",
+        link: "https://hello.wesleyem.com",
+      },
     ],
   };
   render() {
