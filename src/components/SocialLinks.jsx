@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Social from "./Social";
 
 class SocialLinks extends Component {
   state = {
@@ -34,9 +35,12 @@ class SocialLinks extends Component {
     return (
       <div className="social-links">
         {this.state.socials.map((social) => (
-          <a key={social.aClass} href={social.link} className={social.aClass}>
-            <i className={"bx " + social.iClass}></i>
-          </a>
+          <Social
+            key={social.aClass}
+            link={social.link}
+            classN={social.aClass}
+            iClass={social.iClass}
+          />
         ))}
       </div>
     );
