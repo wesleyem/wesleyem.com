@@ -30,6 +30,11 @@ class About extends Component {
                   <ul>
                     <li>
                       <i className="bi bi-chevron-right"></i>
+                      <strong>Certificates:</strong>
+                      <span>CompTIA Security+</span>
+                    </li>
+                    <li>
+                      <i className="bi bi-chevron-right"></i>
                       <strong>Degree:</strong>
                       <span>B.S. Computer Science</span>
                     </li>
@@ -40,7 +45,12 @@ class About extends Component {
                     </li>
                     <li>
                       <i className="bi bi-chevron-right"></i>
-                      <strong>Resume:</strong> <span>LinkedIn</span>
+                      <strong>Resume:</strong>{" "}
+                      <span>
+                        <a href="https://linkedin.com/in/wesleymontserrat">
+                          LinkedIn
+                        </a>
+                      </span>
                     </li>
                   </ul>
                 </div>
