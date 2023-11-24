@@ -12,7 +12,7 @@ class SocialLinks extends Component {
       {
         aClass: "linkedin",
         iClass: "bxl-linkedin",
-        link: "https://linkedin.com//in/wesleymontserrat",
+        link: "https://linkedin.com/in/wesleymontserrat",
       },
       {
         aClass: "github",
