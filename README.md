@@ -1,72 +1,71 @@
-# Professional Website
+# Personal Website
 
-React app for my personal resume style website, boostrapped with [Create React App](https://github.com/facebook/create-react-app).
+Assumptions: [Jekyll](https://jekyllrb.com/docs/installation/), [Ruby](https://www.ruby-lang.org/en/documentation/installation/), and [Bundler](https://bundler.io/) installed.
 
-Everything listed below is boilerplate from create-react-app.
+    git clone https://github.com/wesleyem/wesleyem.com.git
+    cd wesleyem.com
+    bundle exec jekyll serve
 
-## Available Scripts
+This project serves to host my personal website which is created using the Cvless theme with Jekyll. I removed the docker component from the codebase. Below is the README from the original project.
 
-In the project directory, run:
+# cvless
 
-### `npm start`
+Cvless is a theme for static websites built with Jekyll. It aims for simplicity and readability by following best practices of graphic design, like the use of [high contrast](https://www.contrastrebellion.com), [law of proximity](https://lawsofux.com/law-of-proximity), and responsive layout. Its typography is based on the [Piazzolla system](https://piazzolla.huertatipografica.com/), which performs extremely well over a wide range of font sizes.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The main aesthetic feature of the theme is the use of [particles.js](https://vincentgarreau.com/particles.js/) in the home and the 404 pages. In addition, the theme includes a well-designed CV page. Printing this from browser automatically adapts the layout for a more traditional appearance, so you no longer have to maintain a separate CV for offline distribution. Finally, the theme offers a simple and easily extensible blog.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Light and dark modes are available. The theme initializes based on system preferences and stores the user's preference for the duration of the session.
 
-### `npm test`
+See the [demo](https://cvless.netlify.app) to get a better sense of what the theme looks like.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![](https://github.com/piazzai/cvless/blob/master/screenshot.jpg)
 
-### `npm run build`
+## Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1.  Clone this repository.
+2.  Rename it to `[username].github.io`.
+3.  Start editing!
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Usage
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Configuration primarily occurs in four files. First, `_config.yml`, which contains site variables such as title, tagline, url, and repository address, as well as the author's name and email address for inclusion in blog posts. You can also specify the path to an avatar for inclusion in the home (optional).
 
-### `npm run eject`
+Second, you should update icon links in `_includes/particles-home.html` and add/remove icons as needed. You might want to add icons that are not included in the theme by default. For more information on how to do this, see [this post](https://cvless.netlify.app/2022/08/01/on-the-use-of-icons/).
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Third, you should customize the file `_includes/contact.html` by inputting your contact details and adding/removing lines as needed. This information is prepended to your CV.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Fourth, you might want to edit the style variables specified in `_sass/_variables.scss`. These allow you to customize the theme's color scheme and typefaces. There are many resources on the web to learn the principles of good web design. I personally recommend Matthew Butterick's [Practical Typography](https://practicaltypography.com/websites.html).
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+In addition to these files, you can customize favicons in the `assets` folder. For that, [favicon.io](https://favicon.io/) is an excellent tool. You can also change the particles.js configurations in `assets/json`. The [library homepage](https://vincentgarreau.com/particles.js/) features an interactive tool from which you can export a new configuration.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Local Development
 
-## Learn More
+This repo includes a docker-compose file that allows you to quickly setup a container running Jekyll. If you don't already have Docker and docker-compose installed, you can install them using the following guides:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+**Install Guides**
+* [Docker](https://docs.docker.com/get-docker/)
+* [docker-compose](https://docs.docker.com/compose/install/)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+To start the container simply run:
 
-### Code Splitting
+```
+docker-compose up
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Alternatively you can run the container without docker-compose using this command on iOS/Linux:
 
-### Analyzing the Bundle Size
+```
+docker run -p 4000:4000 -v $(pwd):/site bretfisher/jekyll-serve
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Credits
 
-### Making a Progressive Web App
+The theme draws in one way or another from the following projects:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+-   [Bootstrap](https://getbootstrap.com/)
+-   [Hack](https://sourcefoundry.org/hack/)
+-   [Iconoir](https://iconoir.com/)
+-   [Open Color](https://yeun.github.io/open-color/)
+-   [Particles.js](https://vincentgarreau.com/particles.js/)
+-   [Piazzolla](https://piazzolla.huertatipografica.com/)
+-   [Poole](https://getpoole.com/)

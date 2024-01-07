@@ -1,0 +1,57 @@
+# site settings
+
+title: Wesley Montserrat
+description: Secure your digital landscape with Wesley Montserrat, a cybersecurity-focused military leader and helicopter pilot. Leveraging strategic planning, operational risk management, and cross-functional collaboration honed in the military, I bring a commitment to excellence in safeguarding information systems. Transitioning to cybersecurity, I am poised to contribute strong leadership and a determined mindset to fortify your organization against cyber threats. Connect with me to explore how my expertise can enhance your cybersecurity initiatives.
+taglong: Transitioning service member, leader, and lifelong learner
+tagshort: Transitioning service member, leader, and lifelong learner
+url: https://wesleyem.com
+baseurl: ""
+permalink: pretty
+repo: https://github.com/wesleyem/wesleyem.com
+
+# author settings
+author:
+  name: Wesley Montserrat
+  email: wesleyem@proton.com
+photo: /assets/jpg/photo.jpg
+
+# social media links
+
+social:
+  github: wesleyem
+  linkedin: wesleymontserrat
+  twitter: spo0f_
+
+# build settings
+
+exclude:
+  - LICENSE
+  - README.md
+
+plugins:
+  - jekyll-feed
+  - jekyll-gist
+  - jekyll-paginate-v2
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+whitelist:
+  - jekyll-sitemap
+
+sass:
+  sass_dir: _sass
+  style: compressed
+  sourcemap: never
+
+feed:
+  path: atom.xml
+
+autopages:
+  enabled: false
+
+pagination:
+  enabled: true
+  per_page: 1
+  sort_reverse: true
+  permalink: /:num/
+  title: ":title &middot; Page :num"
