@@ -17,7 +17,7 @@
     "isotope-layout": "^3.0.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
+    "react-scripts": "^5.0.1",
     "swiper": "^9.0.4",
     "typed.js": "^2.0.12",
     "waypoints": "^4.0.1",

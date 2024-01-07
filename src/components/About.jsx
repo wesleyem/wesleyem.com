@@ -9,9 +9,9 @@ class About extends Component {
           <div className="section-title">
             <h2>About</h2>
             <p>
-              I'm a diversely experienced leader of Marines with a wide range of
-              experience from managing cross-functional teams in achieving
-              operational objectives to compliance and risk management.
+              I'm a diversely experienced military helicopter pilot with years of experience
+              ranging from navigating complex operational environments to advising senior
+              leaders on aviation optimization.
             </p>
           </div>
 
@@ -20,7 +20,7 @@ class About extends Component {
               <img className="about-profile img-fluid" alt="" />
             </div> */}
             <div className="col-lg-8 pt-4 pt-lg-0 content">
-              <h3>U.S. Marine Officer &amp; IT Enthusiast.</h3>
+              <h3>Transitioning Service Member, Leader, &amp; Lifelong Learner</h3>
               <p className="fst-italic">
                 The most important resource in the universe is Time. I don't
                 like to waste it.
@@ -56,16 +56,7 @@ class About extends Component {
                 </div>
               </div>
               <p>
-                I'm a highly experienced leader of Marines with a proven track
-                record of achieving operational objectives and managing
-                cross-functional teams. Over the course of my career, I've honed
-                my skills in risk management and compliance while leading
-                Marines through some incredibly challenging situations. With a
-                unique set of skills and a passion for excellence, I'm now
-                focused on leveraging my experience to make a positive impact in
-                the civilian world. Whether I'm working with a team to achieve a
-                common goal or taking on a new challenge solo, I'm dedicated to
-                achieving success and making a difference.
+              Transitioning skills to contribute to the Information Technology industry, bringing leadership experience and operational risk management proficiency. Committed to excellence, fostering cross-functional collaboration, and making an impact in the civilian realm.
               </p>
             </div>
           </div>
