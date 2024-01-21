@@ -11,9 +11,9 @@ Welcome! I am an experienced helicopter pilot with an extensive military backgro
 
 My leadership experience extends to successfully guiding Marines through diverse situations, ensuring operational objectives were met and fostering cross-functional collaboration. From tactical flight missions to garrison program compliance inspections, I honed my operational risk management skills, guaranteeing mission success even in the most challenging circumstances.
 
-### Transition to Cyber
+### Transition to IT
 
-With a wealth of leadership experience under my belt, I am excited to embark on the next chapter of my career in Cyber. My journey reflects a resolute determination to succeed and make a difference, whether orchestrating collaborative team efforts or embracing new challenges independently.
+With a wealth of leadership experience under my belt, I am excited to embark on the next chapter of my career in IT. My journey reflects a resolute determination to succeed and make a difference, whether orchestrating collaborative team efforts or embracing new challenges independently.
 
 ### Core Attributes
 
