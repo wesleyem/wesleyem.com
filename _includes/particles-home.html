@@ -6,14 +6,14 @@
     <h1 class="particles-title">{{ site.title }}</h1>
     <h1 class="particles-subtitle">{{ site.taglong }}</h1>
     <div class="nowrap">
-      {% if site.social.x %}
-      <a class="particles-icon" href="https://x.com/{{ site.social.x }}">{% include svg/x.svg %}</a>
-      {% endif %}
       {% if site.social.linkedin %}
       <a class="particles-icon" href="https://www.linkedin.com/in/{{ site.social.linkedin }}">{% include svg/linkedin.svg %}</a>
       {% endif %}
       {% if site.social.github %}
       <a class="particles-icon" href="https://github.com/{{ site.social.github }}">{% include svg/github.svg %}</a>
+      {% endif %}
+      {% if site.social.x %}
+      <a class="particles-icon" href="https://x.com/{{ site.social.x }}">{% include svg/x.svg %}</a>
       {% endif %}
       <a class="particles-icon" href="posts">{% include svg/blogpost.svg %}</a>
     </div>
