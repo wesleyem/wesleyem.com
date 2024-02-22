@@ -5,23 +5,15 @@ title: Home
 
 # About
 
-Welcome! I am an experienced helicopter pilot with an extensive military background, where I served as a leader and mentor. My journey in the military equipped me with invaluable skills in optimizing aviation assets through meticulous planning and coordination. Advising senior military leaders became second nature, and I developed a deep-seated commitment to excellence and lifelong learning.
+Hello there! I'm an IT professional with a twist. Beginning my journey as a software developer, I ventured into a different arena by serving my country in the military for 8 fulfilling years. Now, I'm on a mission to reintegrate into the dynamic IT landscape, seeking opportunities in software engineering, DevOps, or cybersecurity risk analysis. Let's connect and explore the possibilities together!
 
-### Leadership in Action
+### Foundational Skills
 
-My leadership experience extends to successfully guiding Marines through diverse situations, ensuring operational objectives were met and fostering cross-functional collaboration. From tactical flight missions to garrison program compliance inspections, I honed my operational risk management skills, guaranteeing mission success even in the most challenging circumstances.
+**Personal & Professional Development**: Throughout my time outside the IT industry, I pursued and obtained the CompTIA Security+ certification. I also maintained a commitment to self-led education and staying abreast of industry developments, showcasing my proactive approach and dedication to lifelong learning.
 
-### Transition to IT
+**Project Management**: I created customized web applications by adapting technology and utilizing best practices that aligned with the scope and vision of the organization. This allowed me to adhere to schedule, budget, and completion of tasks effectively.
 
-With a wealth of leadership experience under my belt, I am excited to embark on the next chapter of my career in IT. My journey reflects a resolute determination to succeed and make a difference, whether orchestrating collaborative team efforts or embracing new challenges independently.
-
-### Core Attributes
-
-**Excellence**: A commitment to excellence has been the driving force throughout my career, ensuring the highest standards in every endeavor.
-
-**Risk Management**: Meticulous honing of operational risk management skills has prepared me for success in the face of challenges, be it in tactical flight missions or compliance inspections.
-
-**Leadership**: Guiding teams through diverse situations, I prioritize collaboration and effective communication to achieve operational objectives.
+**Policy & Compliance**: I implemented procedures and data validation mechanisms aligned with program standards and industry regulations, resulting in 100% successful compliance audits. This enhanced organizational efficiency and security, reflecting my dedication to excellence in every aspect of my work.
 
 
 {% include contact.html %}
