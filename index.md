@@ -5,7 +5,7 @@ title: Home
 
 # About
 
-Hello there! I'm an IT professional with a twist. Beginning my journey as a software developer, I ventured into a different arena by serving my country in the military for 8 fulfilling years. Now, I'm on a mission to reintegrate into the dynamic IT landscape, seeking opportunities in software engineering, DevOps, or cybersecurity risk analysis. Let's connect and explore the possibilities together!
+Hello there! I'm an IT professional with a twist. Beginning my journey as a software engineer, I ventured into a different arena by serving my country in the military for 8 fulfilling years. Now, I'm on a mission to reintegrate into the dynamic IT landscape, seeking opportunities in software engineering, DevOps, cloud security or cyber threat intelligence. Let's connect and explore the possibilities together!
 
 ### Foundational Skills
 
