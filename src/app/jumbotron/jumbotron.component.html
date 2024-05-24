@@ -1,0 +1,22 @@
+<div class="jumbotron text-center">
+    @if (site.photo) {
+        <img class="particles-photo" src="{{ site.photo }}" />
+    }
+    <h1 class="particles-title">{{ site.title }}</h1>
+    <h1 class="particles-subtitle">{{ site.tag }}</h1>
+    <div class="nowrap">
+      @if (site.social.linkedin) {
+        <a class="particles-icon" href="https://www.linkedin.com/in/{{ site.social.linkedin }}"><i class="bi bi-linkedin"></i></a>
+      }
+      @if (site.social.github) {
+        <a class="particles-icon" href="https://github.com/{{ site.social.github }}"><i class="bi bi-github"></i></a>
+      }
+      @if (site.social.x) {
+        <a class="particles-icon" href="https://x.com/{{ site.social.x }}"><i class="bi bi-x"></i></a>
+      }
+      <a class="particles-icon" href="posts"><i class="bi bi-book"></i></a>
+    </div>
+  </div>
+  <div class="particles-scroll">
+    <a class="particles-icon" href="#scroll"><i class="bi bi-arrow-down-cirle"></i></a>
+  </div>
