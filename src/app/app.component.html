@@ -1,4 +1,7 @@
-<div id="particles-js" class="content fullscreen">
-  <app-jumbotron [site]="site" class="fullscreen"/>
-</div>
+<ngx-particles
+  [id]="id"
+  [url]="particlesUrl"
+  (particlesLoaded)="particlesLoaded($event)"
+></ngx-particles>
+<app-jumbotron id="particles-js" [site]="site" class="content fullscreen"/>
 <router-outlet />
