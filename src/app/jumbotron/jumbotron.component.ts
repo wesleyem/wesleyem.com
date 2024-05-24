@@ -1,11 +1,11 @@
 import { Component, Input } from '@angular/core';
-import { MatIcon } from '@angular/material/icon';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @Component({
   selector: 'app-jumbotron',
   standalone: true,
   imports: [
-    MatIcon
+    FontAwesomeModule
   ],
   templateUrl: './jumbotron.component.html',
   styleUrl: './jumbotron.component.scss'

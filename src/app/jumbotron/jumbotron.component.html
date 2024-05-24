@@ -7,18 +7,26 @@
     <div class="nowrap">
       @if (site.social.linkedin) {
         <a class="particles-icon" href="https://www.linkedin.com/in/{{ site.social.linkedin }}">
-            <mat-icon svgIcon="linkedin" aria-hidden="false" aria-label="linkedin SVG icon"></mat-icon>
+            <fa-icon [icon]="['fab', 'linkedin']"></fa-icon>
         </a>
       }
       @if (site.social.github) {
-        <a class="particles-icon" href="https://github.com/{{ site.social.github }}"><i class="bi bi-github"></i></a>
+        <a class="particles-icon" href="https://github.com/{{ site.social.github }}">
+            <fa-icon [icon]="['fab', 'github']"></fa-icon>
+        </a>
       }
       @if (site.social.x) {
-        <a class="particles-icon" href="https://x.com/{{ site.social.x }}"><i class="bi bi-x"></i></a>
+        <a class="particles-icon" href="https://x.com/{{ site.social.x }}">
+            <fa-icon [icon]="['fab', 'x-twitter']"></fa-icon>
+        </a>
       }
-      <a class="particles-icon" href="posts"><i class="bi bi-book"></i></a>
+      <a class="particles-icon" href="posts">
+        <fa-icon [icon]="['fas', 'blog']"></fa-icon>
+      </a>
     </div>
   </div>
   <div class="particles-scroll">
-    <a class="particles-icon" href="#scroll"><i class="bi bi-arrow-down-cirle"></i></a>
+    <a class="particles-icon" href="#scroll">
+        <fa-icon [icon]="['fas', 'chevron-down']"></fa-icon>
+    </a>
   </div>

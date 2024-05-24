@@ -1,8 +1,20 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { IconResolver, MatIcon, MatIconRegistry } from '@angular/material/icon';
 import { JumbotronComponent } from './jumbotron/jumbotron.component';
-import { DomSanitizer } from '@angular/platform-browser';
+import {
+  FontAwesomeModule,
+  FaIconLibrary,
+} from '@fortawesome/angular-fontawesome';
+import {
+  faGithub,
+  faLinkedin,
+  faXTwitter,
+} from '@fortawesome/free-brands-svg-icons'
+
+import {
+  faBlog,
+  faChevronDown
+} from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-root',
@@ -10,16 +22,20 @@ import { DomSanitizer } from '@angular/platform-browser';
   imports: [
     RouterOutlet,
     JumbotronComponent,
-    MatIcon
+    FontAwesomeModule
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  constructor(iconRegistry: MatIconRegistry, sanitizer: DomSanitizer) {
-    const resolver: IconResolver = (name) =>
-      sanitizer.bypassSecurityTrustResourceUrl(`/svg/${name}.svg`);
-    iconRegistry.addSvgIconResolver(resolver);
+  constructor(faLib: FaIconLibrary) {
+    faLib.addIcons(
+      faGithub,
+      faLinkedin,
+      faXTwitter,
+      faChevronDown,
+      faBlog
+    )
   }
   // 
   site = {

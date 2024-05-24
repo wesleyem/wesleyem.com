@@ -66,6 +66,7 @@
     svg path {
       stroke: var(--color-particles-text) !important;
       stroke-width: 0.05em;
+      color: var(--color-particles-text) !important;
     }
   
     &:focus,

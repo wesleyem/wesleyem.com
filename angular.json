@@ -32,16 +32,13 @@
               }
             ],
             "styles": [
-              "node_modules/bootstrap/scss/bootstrap.scss",
-              "node_modules/bootstrap-icons/font/bootstrap-icons.css",
-              "node_modules/open-color/open-color.scss",
               "src/sass/styles.scss"
             ],
             "stylePreprocessorOptions": {
               "includePaths": [
-                "src/sass",
                 "node_modules/bootstrap/scss",
-                "node_modules/open-color"
+                "node_modules/open-color/open-color",
+                "src/sass"
               ]
             },
             "scripts": [
