@@ -1,9 +1,12 @@
 import { Component, Input } from '@angular/core';
+import { MatIcon } from '@angular/material/icon';
 
 @Component({
   selector: 'app-jumbotron',
   standalone: true,
-  imports: [],
+  imports: [
+    MatIcon
+  ],
   templateUrl: './jumbotron.component.html',
   styleUrl: './jumbotron.component.scss'
 })

@@ -6,7 +6,9 @@
     <h1 class="particles-subtitle">{{ site.tag }}</h1>
     <div class="nowrap">
       @if (site.social.linkedin) {
-        <a class="particles-icon" href="https://www.linkedin.com/in/{{ site.social.linkedin }}"><i class="bi bi-linkedin"></i></a>
+        <a class="particles-icon" href="https://www.linkedin.com/in/{{ site.social.linkedin }}">
+            <mat-icon svgIcon="linkedin" aria-hidden="false" aria-label="linkedin SVG icon"></mat-icon>
+        </a>
       }
       @if (site.social.github) {
         <a class="particles-icon" href="https://github.com/{{ site.social.github }}"><i class="bi bi-github"></i></a>
