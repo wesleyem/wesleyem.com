@@ -1,0 +1,8 @@
+<h1 id="about">About</h1>
+<p>{{ details.about }}</p>
+<h3 id="foundational-skills">Foundational Skills</h3>
+@for (skill of details.skills; track skill) {
+    <p>
+        <strong>{{ skill.title }}</strong>: {{ skill.body }}
+    </p>
+}

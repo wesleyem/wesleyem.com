@@ -1,32 +1,32 @@
-<div class="jumbotron text-center">
-    @if (site.photo) {
-        <img class="particles-photo" src="{{ site.photo }}" />
-    }
-    <h1 class="particles-title">{{ site.title }}</h1>
-    <h1 class="particles-subtitle">{{ site.tag }}</h1>
-    <div class="nowrap">
-      @if (site.social.linkedin) {
-        <a class="particles-icon" href="https://www.linkedin.com/in/{{ site.social.linkedin }}">
-            <fa-icon [icon]="['fab', 'linkedin']"></fa-icon>
-        </a>
-      }
-      @if (site.social.github) {
-        <a class="particles-icon" href="https://github.com/{{ site.social.github }}">
-            <fa-icon [icon]="['fab', 'github']"></fa-icon>
-        </a>
-      }
-      @if (site.social.x) {
-        <a class="particles-icon" href="https://x.com/{{ site.social.x }}">
-            <fa-icon [icon]="['fab', 'x-twitter']"></fa-icon>
-        </a>
-      }
-      <a class="particles-icon" href="posts">
-        <fa-icon [icon]="['fas', 'blog']"></fa-icon>
+<div class="p-5 mb-4 bg-body-tertiary rounded-3 text-center">
+  @if (site.photo) {
+      <img class="img-fluid rounded-circle" src="{{ site.photo }}" />
+  }
+  <h1>{{ site.title }}</h1>
+  <h1>{{ site.tag }}</h1>
+  <div>
+    @if (site.social.linkedin) {
+      <a href="https://www.linkedin.com/in/{{ site.social.linkedin }}">
+        <ng-icon name="bootstrapLinkedin"></ng-icon>
       </a>
-    </div>
-  </div>
-  <div class="particles-scroll">
-    <a class="particles-icon" href="#scroll">
-        <fa-icon [icon]="['fas', 'chevron-down']"></fa-icon>
+    }
+    @if (site.social.github) {
+      <a href="https://github.com/{{ site.social.github }}">
+        <ng-icon name="bootstrapGithub"></ng-icon>
+      </a>
+    }
+    @if (site.social.x) {
+      <a href="https://x.com/{{ site.social.x }}">
+        <ng-icon name="bootstrapTwitterX"></ng-icon>
+      </a>
+    }
+    <a href="posts">
+      <ng-icon name="bootstrapBlockquoteLeft"></ng-icon>
     </a>
   </div>
+</div>
+<div>
+  <a href="#scroll">
+    <ng-icon name="bootstrapChevronDown"></ng-icon>
+  </a>
+</div>
