@@ -1,10 +1,15 @@
 // Core Angular
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 
 // Application Components
-import { JumbotronComponent } from './jumbotron/jumbotron.component';
-import { MainComponent } from './main/main.component';
+import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
+import { NavbarComponent } from './navbar/navbar.component';
+
+// ng-icons
+import { NgIconComponent, provideIcons } from '@ng-icons/core';
+import { bootstrapGithub, bootstrapLinkedin, bootstrapTwitterX } from '@ng-icons/bootstrap-icons';
 
 // ------------------------------------------------------------------------------------
 
@@ -12,24 +17,16 @@ import { MainComponent } from './main/main.component';
   selector: 'app-root',
   standalone: true,
   imports: [
-    RouterOutlet,
-    JumbotronComponent,
-    MainComponent,
+    NgIconComponent,
+    NavbarComponent,
+    RouterLink, RouterOutlet, RouterLinkActive
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
-
+  viewProviders: [
+    provideIcons({bootstrapGithub, bootstrapLinkedin, bootstrapTwitterX})
+  ]
 })
 export class AppComponent {
-  site = {
-    photo: "/headshot.jpg",
-    title: "Wesley Montserrat",
-    tag: "Software Engineering | DevOps | Cybersecurity",
-    social: {
-      linkedin: "wesleymontserrat",
-      github: "wesleyem",
-      x: "spo0f_"
-    }
-  }
 
 }
