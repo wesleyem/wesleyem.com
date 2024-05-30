@@ -1,5 +1,13 @@
 # Wesley Montserrat
 
+Personal website
+
+Deploy with `ng deploy`
+
+
+---
+below is content auto generated using the angular cli tool
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.1.
 
 ## Development server
