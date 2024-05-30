@@ -3,15 +3,27 @@
         <h1 class="fw-light">Contact</h1>
     </div>
 
-    <div class="row row-cols-auto">
+    <div class="row row-cols-auto row-gap-3">
         <div class="col">
-            <ng-icon name="bootstrapLinkedin"/>            
+            @if (social.LINKEDIN) {
+                <a class="custom-icon-link" href="https://linkedin.com/in/{{ social.LINKEDIN }}">
+                    <ng-icon name="bootstrapLinkedin"/>
+                </a>
+            }
         </div>
         <div class="col">
-            <ng-icon name="bootstrapGithub"/>            
+            @if (social.GITHUB) {
+                <a class="custom-icon-link" href="https://github.com/{{ social.GITHUB }}">
+                    <ng-icon name="bootstrapGithub"/>
+                </a>
+            }
         </div>
         <div class="col">
-            <ng-icon name="bootstrapTwitterX"/>            
+            @if (social.XTWITTER) {
+                <a class="custom-icon-link" href="https://x.com/{{ social.XTWITTER }}">
+                    <ng-icon name="bootstrapTwitterX"/>
+                </a>
+            }
         </div>
     </div>
 </div>

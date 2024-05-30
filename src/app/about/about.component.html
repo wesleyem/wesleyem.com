@@ -8,7 +8,7 @@
     </div>
 
     <div class="row">
-        <p class="fs-6">Software engineering guy. Trying to be better than yesterday.</p>
+        <p class="fs-6">Software guy. Trying to be better than yesterday.</p>
     </div>
 
     <div class="row">
@@ -16,6 +16,13 @@
             <li>Full Stack Engineer &#64; CA Department of Technology (2013 - 2015)</li>
             <li>Helicopter Pilot &#64; US Marine Corps (2015 - 2024)</li>
             <li>Full Stack Engineer <em class="fw-lighter">(intern)</em> &#64; IBM (2024)</li>
+            @if (social.LINKEDIN) {
+                <li>
+                    <a href="https://linkedin.com/in/{{ social.LINKEDIN }}">
+                        LinkedIn
+                    </a>
+                </li>
+            }
         </ul>
     </div>
 </div>

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NgIconComponent } from '@ng-icons/core';
+import { Social } from '../social';
 
 @Component({
   selector: 'app-contact',
@@ -10,10 +11,6 @@ import { NgIconComponent } from '@ng-icons/core';
 })
 export class ContactComponent {
 
-  social = {
-    linkedin: "wesleymontserrat",
-    github: "wesleyem",
-    xtwitter: "spo0f_"
-  }
+  social = Social;
 
 }
