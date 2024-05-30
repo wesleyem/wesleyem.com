@@ -5,13 +5,10 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
   selector: 'app-navbar',
   standalone: true,
   imports: [
-    RouterLink, RouterLinkActive
+    RouterLink,
+    RouterLinkActive,
   ],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.scss'
 })
-export class NavbarComponent {
-  navOnClick() {
-    console.log();
-  }
-}
+export class NavbarComponent {}
