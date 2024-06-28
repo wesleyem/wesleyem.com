@@ -11,10 +11,10 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: Set up Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v4
         with:
           node-version: '20'
 
@@ -22,10 +22,10 @@ jobs:
         run: npm install
 
       - name: Install Angular CLI
-        run: npm install @angular/cli
+        run: npm install -g @angular/cli
 
       - name: Build Angular app
-        run: ng build --configuration production
+        run: ng build
 
       - name: Deploy to GitHub Pages
         run: ng deploy
