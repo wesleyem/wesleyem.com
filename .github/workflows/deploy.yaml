@@ -6,7 +6,10 @@ on:
       - main
 
 jobs:
-  build-and-deploy:
+  code-pipeline:
+    permissions:
+      pages: write
+      
     runs-on: ubuntu-latest
 
     steps:
