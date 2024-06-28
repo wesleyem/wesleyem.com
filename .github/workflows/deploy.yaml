@@ -32,6 +32,6 @@ jobs:
         run: ng build
 
       - name: Deploy to GitHub Pages
-        run: ng deploy --build-target=production --name="wesleyem" --email="wesleyem@pm.me"
+        run: ng deploy --build-target=angular-cli-ghpages:deploy --name="wesleyem" --email="wesleyem@pm.me"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
