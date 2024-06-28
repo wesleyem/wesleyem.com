@@ -9,6 +9,7 @@ jobs:
   code-pipeline:
     permissions:
       pages: write
+      contents: write
       
     runs-on: ubuntu-latest
 
