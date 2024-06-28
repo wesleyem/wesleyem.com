@@ -17,5 +17,5 @@ jobs:
     - id: build-publish
       uses: bitovi/github-actions-angular-to-github-pages@v1.0.0
       with:
-        path: dis/${{ github.event.repository.name }}
+        path: dist/${{ github.event.repository.name }}
         build_command: npm run build -- --base-href=/
