@@ -8,6 +8,12 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+
+    environment:
+      name: github-pages
 
     steps:
       - name: Checkout
@@ -22,7 +28,8 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Prepare and deploy
+      - name: Prepare
         run: npm run ng -- deploy --base-href=/ --name="wesleyem" --email="wesleyem@pm.me"
-        env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+
+      - name: Deploy
+        uses: actions/deploy-pages@v4
