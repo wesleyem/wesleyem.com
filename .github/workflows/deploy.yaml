@@ -25,4 +25,4 @@ jobs:
       - name: Prepare and deploy
         run: npm run ng -- deploy --base-href=/ --name="wesleyem" --email="wesleyem@pm.me"
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
