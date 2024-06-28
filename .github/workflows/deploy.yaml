@@ -28,10 +28,13 @@ jobs:
       - name: Install Angular CLI
         run: npm install -g @angular/cli
 
+      - name: angular-cli-ghpages
+        run: ng add angular-cli-ghpages
+
       - name: Build Angular app
-        run: npm run build
+        run: ng build
 
       - name: Deploy to GitHub Pages
-        run: npx angular-cli-ghpages --dir=dist/wesleyem.com
+        run: ng deploy
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
