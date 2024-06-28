@@ -6,32 +6,23 @@ on:
       - main
 
 jobs:
-  code-pipeline:
-    permissions:
-      pages: write
-      contents: write
-      
+  build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
+      - name: Checkout
         uses: actions/checkout@v4
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20'
+          cache: 'npm'
 
       - name: Install dependencies
         run: npm install
 
-      - name: Install Angular CLI
-        run: npm install -g @angular/cli
-
-      - name: Build Angular app
-        run: ng build
-
-      - name: Deploy to GitHub Pages
-        run: ng deploy --repo=https://github.com/wesleyem/wesleyem.com.git
+      - name: Prepare and deploy
+        run: npm run ng -- deploy --base-href=/ --name="wesleyem" --email="wesleyem@pm.me"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
