@@ -4,7 +4,10 @@
 
 Personal website
 
-Deploy with `ng deploy`
+```bash
+npm install
+ng serve
+```
 
 
 ---
