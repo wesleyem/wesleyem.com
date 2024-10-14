@@ -1,16 +1,14 @@
 import { Component } from '@angular/core';
-import { NgIconComponent } from '@ng-icons/core';
-import { Social } from '../social';
+import { ISocialItem, Social } from '../models/social';
+import { CardComponent } from '../social/card/card.component';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [NgIconComponent],
+  imports: [CardComponent],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
 })
 export class ContactComponent {
-
-  social = Social;
-
+  socialContacts: ISocialItem[] = Social.SOCIALS;
 }

@@ -1,0 +1,16 @@
+<div class="col">
+  <mat-list-item>
+    <span matListItemTitle>{{ job.position }}</span>
+    <p>
+      <small>&commat; {{ job.company }}</small>
+      <small matListItemLine>{{ job.startDate }}</small>
+    </p>
+  </mat-list-item>
+  <mat-list-item>
+    <span>
+      @for (chip of job.chips; track chip) {
+        <mat-chip>{{ chip }}</mat-chip>
+      }
+    </span>
+  </mat-list-item>
+</div>
