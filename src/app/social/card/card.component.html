@@ -1,0 +1,11 @@
+@if (socialItem) {
+  <mat-card appearance="outlined">
+    <mat-card-header>
+      <div mat-card-avatar>
+        <app-icon [icon]="socialItem.icon" [link]="socialItem.link"></app-icon>
+      </div>
+      <mat-card-title>{{ socialItem.type }}</mat-card-title>
+      <mat-card-subtitle><a href="{{ socialItem.link }}">&commat;{{ socialItem.username }}</a></mat-card-subtitle>
+    </mat-card-header>
+  </mat-card>
+}

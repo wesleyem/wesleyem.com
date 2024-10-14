@@ -1,13 +1,8 @@
 // Core Angular
 import { Component } from '@angular/core';
-import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
-
-// Application Components
-import { NavbarComponent } from './navbar/navbar.component';
 
 // ng-icons
-import { NgIconComponent, provideIcons } from '@ng-icons/core';
-import { bootstrapGithub, bootstrapLinkedin, bootstrapTwitterX } from '@ng-icons/bootstrap-icons';
+import { NavigationComponent } from './navigation/navigation.component';
 
 // ------------------------------------------------------------------------------------
 
@@ -15,16 +10,9 @@ import { bootstrapGithub, bootstrapLinkedin, bootstrapTwitterX } from '@ng-icons
   selector: 'app-root',
   standalone: true,
   imports: [
-    NgIconComponent,
-    NavbarComponent,
-    RouterLink, RouterOutlet, RouterLinkActive
+    NavigationComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
-  viewProviders: [
-    provideIcons({bootstrapGithub, bootstrapLinkedin, bootstrapTwitterX})
-  ]
 })
-export class AppComponent {
-
-}
+export class AppComponent {}

@@ -1,28 +1,29 @@
 <div class="container-fluid">
-    <div class="row">
-        <h1 class="fw-light">About</h1>
-    </div>
+  <div class="row">
+      <h1 class="fw-light">About</h1>
+  </div>
+  <div class="row">
+      <p class="fs-6">Software guy. Working to be better than yesterday.</p>
+  </div>
 
-    <div class="row">
-        <h3 class="fw-lighter">Wesley Montserrat</h3>
-    </div>
-
-    <div class="row">
-        <p class="fs-6">Software guy. Trying to be better than yesterday.</p>
-    </div>
-
-    <div class="row">
-        <ul class="mb-2 lh-lg">
-            @if (social.LINKEDIN) {
-                <li>
-                    <a href="https://linkedin.com/in/{{ social.LINKEDIN }}">
-                        LinkedIn
-                    </a>
-                </li>
-            }
-            <li>Software Engineer, Full Stack &#64; IBM (2024)</li>
-            <li>Helicopter Pilot &#64; US Marine Corps (2015 - 2024)</li>
-            <li>Software Engineer, Full Stack &#64; CA Department of Technology (2013 - 2015)</li>
-        </ul>
-    </div>
+<div class="row">
+  @for (job of jobs; track job) {
+    <mat-card class="example-card" appearance="outlined">
+      <mat-card-header>
+        <mat-card-title>{{ job.position }}</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        {{ job.headline }}
+      </mat-card-content>
+      <mat-card-footer>
+        <mat-chip-set>
+          @for (chip of job.chips; track chip) {
+            <mat-chip>{{ chip }}</mat-chip>
+          }
+        </mat-chip-set>
+      </mat-card-footer>
+    </mat-card>
+    <br>
+  }
+</div>
 </div>
